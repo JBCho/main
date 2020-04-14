@@ -10,6 +10,7 @@
 --------------------------------------------------------------*/
 
 
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -124,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #18d26e;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
     #header {
         height:30vh;
         margin-bottom:-20vh;
@@ -604,8 +605,6 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume .container {
-}
 
 .resume .resume-title {
   font-size: 26px;
@@ -613,6 +612,19 @@ section .container {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+@media (max-width: 1000px) {
+    .resume .resume-title {
+        font-size:18px;
+    }
+    .resume h5 {
+        font-size:12px;
+    }
+    
+    .resume-item li {
+        font-size:12px;
+    }
 }
 
 .resume .resume-item {
@@ -656,9 +668,6 @@ section .container {
 @media (max-width: 992px) {
   #resume .container {
     position:relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width:100%;
   }
 }
