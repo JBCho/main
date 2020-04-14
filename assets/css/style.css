@@ -8,6 +8,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -26,10 +28,15 @@ body::before {
   height: 100vh;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 992px) {
   body::before {
-    background-attachment: fixed;
+      position:fixed;
+      max-width:100%;
+      height:auto;
   }
+    body {
+    background: #040404 repeat;
+    }
 }
 
 a {
@@ -55,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   z-index: 997;
-  overflow-y: auto;
+  overflow-y:auto;
 }
 
 #header * {
@@ -118,6 +125,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 992px) {
+    #header {
+        height:30vh;
+        margin-bottom:-20vh;
+    }
+    
   #header h1 {
     font-size: 36px;
   }
@@ -311,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 140px;
   bottom: 100%;
@@ -322,7 +334,6 @@ section {
 
 section.section-show {
   top: 300px;
-  width:200vh;
   bottom: auto;
   opacity: 1;
   padding-bottom: 45px;
@@ -336,7 +347,6 @@ section .container {
 
 @media (max-width: 768px) {
   section {
-    top: 120px;
   }
   section.section-show {
     top: 80px;
@@ -594,6 +604,9 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume .container {
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -640,16 +653,14 @@ section .container {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+@media (max-width: 992px) {
+  #resume .container {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1092,6 +1103,8 @@ section .container {
 
 @media (max-width: 992px) {
   .credits {
+    position:relative;
+    margin-top:10vh;
     left: 50%;
     right: 0;
     transform: translateX(-50%);
