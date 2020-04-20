@@ -68,7 +68,7 @@ body {
 #contents .profilebox {
     color:white;
     width: 35vw;
-    height:60vh;
+    height:auto;
     
     border-bottom: 2px solid white;
 }
@@ -81,7 +81,7 @@ body {
 #contents .favoritesbox {
     color:white;
     width: 35vw;
-    height:60vh;
+    height:auto;
     border-bottom: 2px solid white;
 
 }
@@ -110,6 +110,7 @@ body {
 
 .box ul {
     margin-top: 10px;
+    margin-bottom:20px;
 }
 .box li {
     font-family:sans-serif;
@@ -136,13 +137,13 @@ body {
     
     #contents .profilebox {
         width: 80vw;
-        height: 60vh;
-        margin-bottom:10vh;
+        height: auto;
+        margin-bottom:5vh;
     }
     
     #contents .favoritesbox {
         width: 80vw;
-        height: 60vh;
+        height: auto;
     }
     
     #activities {
