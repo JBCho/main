@@ -45,7 +45,7 @@ body {
     align-content:flex-start;
     justify-content: space-around;
     
-    padding-top:0vh;
+    padding-top:0;
 }
 
 #activities {    
@@ -138,7 +138,7 @@ body {
     #contents .profilebox {
         width: 80vw;
         height: auto;
-        margin-bottom:5vh;
+        margin-bottom:20px;
     }
     
     #contents .favoritesbox {
