@@ -89,7 +89,7 @@ body {
 #favicon {
     margin-top:25px;
     margin-bottom:25px;
-    font-size:400%;
+    font-size:800%;
 }
 
 #activities .activitybox { 
@@ -105,7 +105,7 @@ body {
 }
 
 .green {
-    color:
+    color:yellowgreen;
 }
 
 .box ul {
