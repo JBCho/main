@@ -28,7 +28,7 @@ body {
     font-size:5rem;
     #margin-right:5%;
     margin-top:30vh;
-    font-family:'Raleway';
+    font-family:'Cabin';
 }
 
 #pagetitle #subtitle {
@@ -155,9 +155,11 @@ body {
     }
     
     #pagetitle #nametitle {
+        font-size: 190%;
         margin-left:5%;
     }
     #pagetitle #subtitle {
+        font-size:130%;
         margin-left:5%;
     }
     
