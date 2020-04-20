@@ -6,6 +6,7 @@ body {
     width: 80%;
     margin-left:10%;
     margin-right:10%;
+    margin-bottom:10vh;
 }
 
 #pagetitle {
@@ -44,7 +45,7 @@ body {
     align-content:flex-start;
     justify-content: space-around;
     
-    padding-top:5vh;
+    padding-top:0vh;
 }
 
 #activities {    
@@ -55,37 +56,56 @@ body {
 }
 
 .box {
-    padding-left:30px;
     padding-top:20px;
 
     color:grey;
-}
-
-#contents .profilebox {
-    color:white;
-    width: 30vw;
     
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
+#contents .profilebox {
+    color:white;
+    width: 35vw;
+    height:60vh;
+    
+    border-bottom: 2px solid white;
+}
+
 #profileimage {
-    margin-top:10px;
-    
-    
+    margin-top:20px;    
     width: 30%;
 }
 
 #contents .favoritesbox {
     color:white;
-    width: 40vw;
-    height: 40vh;
+    width: 35vw;
+    height:60vh;
+    border-bottom: 2px solid white;
+
+}
+
+#favicon {
+    margin-top:25px;
+    margin-bottom:25px;
+    font-size:400%;
 }
 
 #activities .activitybox { 
     width: 25vw;
     height: 40vh;
+    border-bottom: 2px solid white;
+    padding-right:30px;
+    color:white;
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.green {
+    color:
 }
 
 .box ul {
@@ -95,6 +115,7 @@ body {
     font-family:sans-serif;
     margin-top:10px;
     font-size: 120%;
+
 }
 
 .boxtitle {
@@ -115,13 +136,13 @@ body {
     
     #contents .profilebox {
         width: 80vw;
-        height: 40vh;
-        margin-bottom: 10vh;
+        height: 60vh;
+        margin-bottom:10vh;
     }
     
     #contents .favoritesbox {
         width: 80vw;
-        height: 40vh;
+        height: 60vh;
     }
     
     #activities {
@@ -129,7 +150,21 @@ body {
     }
     
     #pagetitle {
-        background-size:contain;
+        background-image:url(../files/mobilebg2.jfif);
     }
+    
+    #pagetitle #nametitle {
+        margin-left:5%;
+    }
+    #pagetitle #subtitle {
+        margin-left:5%;
+    }
+    
+    #activities .activitybox { 
+        display:none;
+    }
+}
 
+#pos {
+    color:rgb(200,1,80);
 }
