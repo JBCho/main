@@ -1,0 +1,135 @@
+body {
+    background-color:rgba(25,41,54,1);
+}
+
+.main {
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#pagetitle {
+    background-image:url(../files/bg1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    margin-top:10vh;
+    height:80vh;
+    margin-bottom:10vh;
+    text-align: left;
+    
+    border-bottom: 2px solid white;
+    border-top:2px solid white;
+}
+
+#pagetitle #nametitle {
+    color:white;
+    font-size:5rem;
+    #margin-right:5%;
+    margin-top:30vh;
+    font-family:'Raleway';
+}
+
+#pagetitle #subtitle {
+    color:grey;
+    font-size:2rem;
+    #margin-right: 5%;
+    font-family:'Open Sans';
+}
+
+#contents {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    justify-content: space-around;
+    
+    padding-top:5vh;
+}
+
+#activities {    
+    padding-top:10vh;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+}
+
+.box {
+    padding-left:30px;
+    padding-top:20px;
+
+    color:grey;
+}
+
+#contents .profilebox {
+    color:white;
+    width: 30vw;
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#profileimage {
+    margin-top:10px;
+    
+    
+    width: 30%;
+}
+
+#contents .favoritesbox {
+    color:white;
+    width: 40vw;
+    height: 40vh;
+}
+
+#activities .activitybox { 
+    width: 25vw;
+    height: 40vh;
+}
+
+.box ul {
+    margin-top: 10px;
+}
+.box li {
+    font-family:sans-serif;
+    margin-top:10px;
+    font-size: 120%;
+}
+
+.boxtitle {
+    font-size: 200%;
+    font-family:'Girassol';
+}
+
+@media (max-width: 768px) {
+    
+    .main {
+        width:100%;
+        margin-left:0;
+    }
+    
+    #contents {
+        flex-wrap:wrap;
+    }
+    
+    #contents .profilebox {
+        width: 80vw;
+        height: 40vh;
+        margin-bottom: 10vh;
+    }
+    
+    #contents .favoritesbox {
+        width: 80vw;
+        height: 40vh;
+    }
+    
+    #activities {
+        flex-wrap: wrap;
+    }
+    
+    #pagetitle {
+        background-size:contain;
+    }
+
+}
