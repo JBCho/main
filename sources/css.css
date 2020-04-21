@@ -29,6 +29,8 @@ body {
     #margin-right:5%;
     margin-top:30vh;
     font-family:'Cabin';
+    
+    display:none;
 }
 
 #pagetitle #subtitle {
@@ -36,6 +38,8 @@ body {
     font-size:2rem;
     #margin-right: 5%;
     font-family:'Open Sans';
+    
+    display:none;
 }
 
 #contents {
@@ -159,7 +163,7 @@ body {
         margin-left:5%;
     }
     #pagetitle #subtitle {
-        font-size:130%;
+        font-size:150%;
         margin-left:5%;
     }
     
