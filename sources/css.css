@@ -98,7 +98,7 @@ body {
 
 #activities .activitybox { 
     width: 25vw;
-    height: 40vh;
+    height: 30vh;
     border-bottom: 2px solid white;
     padding-right:30px;
     color:white;
@@ -108,8 +108,8 @@ body {
     align-items:center;
 }
 
-.green {
-    color:yellowgreen;
+li {
+    font-size: 100;
 }
 
 .box ul {
@@ -119,13 +119,17 @@ body {
 .box li {
     font-family:sans-serif;
     margin-top:10px;
-    font-size: 120%;
+    font-size: 100%;
 
 }
 
 .boxtitle {
     font-size: 200%;
     font-family:'Girassol';
+}
+
+.activitybox .boxtitle {
+    color:yellowgreen;
 }
 
 @media (max-width: 768px) {
