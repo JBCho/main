@@ -54,6 +54,8 @@ body {
     justify-content: space-around;
     
     padding-top:0;
+    opacity:0;
+    margin-left:-300px;
 }
 
 #activities {    
@@ -61,6 +63,8 @@ body {
     display:flex;
     flex-wrap: nowrap;
     justify-content:space-around;
+    
+    margin-left:-500px;
 }
 
 .box {
@@ -137,22 +141,31 @@ li {
 }
 
 
-footer {
-    bottom:0px;
-    height: 60px;
+bar {
+    position:fixed;
+    
+    right:0;
+    top:0;
+    width:60px;
+    height: 100%;
+    
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items: center;
-    border-top: none;
 }
 
-footer .shortcuts {
-    width: auto;
+bar .shortcuts {
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+bar a {
+    display:none;
 }
 
 .shortcuts a {
-    margin-left : 20px;
-    margin-right: 20px;
 }
 
 #pos {
