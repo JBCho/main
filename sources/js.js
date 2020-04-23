@@ -3,9 +3,13 @@ $(document).ready(function(){
     
     if(isMobile) {
         var height = window.innerHeight;
+        var title_height = height*0.8;
         var name_margintop = height*0.3;
         var act_height = height*0.4;
-    $("#pagetitle").css("height",height);
+        var page_titlemargin = height*0.1;
+    $("#pagetitle").css("height",title_height);
+    $("#pagetitle").css("margin-top",page_titlemargin);
+    $("#pagetitle").css("margin-bottom",page_titlemargin);
     $("#pagetitle #nametitle").css("margin-top", name_margintop);
     $(".activitybox").css("margin-top", act_height);
     }
