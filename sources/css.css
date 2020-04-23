@@ -188,6 +188,7 @@ footer .shortcuts {
     
     #pagetitle {
         width:100vw;
+        height:auto;
         background-position: center;
     }
     
