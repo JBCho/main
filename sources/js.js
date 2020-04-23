@@ -4,7 +4,7 @@ $(document).ready(function(){
     if(isMobile) {
         var height = window.innerHeight;
         var name_margintop = height*0.3;
-    $("#pagetitle").css({height:window.innerHeight});
+    $("#pagetitle").css("height",height);
     $("#pagetitle #nametitle").css("margin-top", name_margintop);
     }
     
