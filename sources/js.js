@@ -22,7 +22,6 @@ $(document).ready(function(){
         $("bar #sidemenu").animate({"opacity":"1"},1000);
     });
     
-    if(isMobile) {
     $(window).scroll(function(){
        $("#contents, #activities").each(function(i){
            var bottom_of_object = $(this).offset().top+$(this).outerHeight();
@@ -34,7 +33,8 @@ $(document).ready(function(){
            
        })
     });
-    }
+    
+    
     
     $("footer a").hover(function(){
         $(this).css("color","green");
