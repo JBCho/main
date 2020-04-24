@@ -7,11 +7,14 @@ $(document).ready(function(){
         var name_margintop = height*0.3;
         var act_height = height*0.4;
         var page_titlemargin = height*0.1;
+        var sidemenu_size = height*0.1-20;
+        
     $("#pagetitle").css("height",title_height);
     $("#pagetitle").css("margin-top",page_titlemargin);
     $("#pagetitle").css("margin-bottom",page_titlemargin);
     $("#pagetitle #nametitle").css("margin-top", name_margintop);
     $(".activitybox").css("margin-top", act_height);
+    $("cvg").css("width",sidemenu_size);
     }
     
     $("#nametitle").slideDown(1500, function(){
@@ -19,6 +22,7 @@ $(document).ready(function(){
         $("bar #sidemenu").animate({"opacity":"1"},1000);
     });
     
+    if(isMobile) {
     $(window).scroll(function(){
        $("#contents, #activities").each(function(i){
            var bottom_of_object = $(this).offset().top+$(this).outerHeight();
@@ -28,8 +32,9 @@ $(document).ready(function(){
                $(this).animate({"opacity":"1","margin-left":"0px"},1000);
            }
            
-       })    
+       })
     });
+    }
     
     $("footer a").hover(function(){
         $(this).css("color","green");
@@ -47,11 +52,4 @@ $(document).ready(function(){
             $("bar #instagram, bar #facebook").fadeOut(500);
         }, 500);
     })
-    if(!isMobile) {
-        var canvas = $('#lines-canvas');
-        canvas.attr('height',$(window).height());
-        canvas.attr('width',$(window).width());
-
-        //new lines().draw();
-    }
 });
