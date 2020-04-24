@@ -191,7 +191,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     
     .main {
         width:100%;
@@ -244,6 +244,7 @@ footer {
     
     bar #sidemenu {
         margin-top: 10px;
+        margin-bottom: 20px;
         order:-1;
     }
     

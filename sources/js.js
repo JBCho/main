@@ -14,7 +14,7 @@ $(document).ready(function(){
     $("#pagetitle").css("margin-bottom",page_titlemargin);
     $("#pagetitle #nametitle").css("margin-top", name_margintop);
     $(".activitybox").css("margin-top", act_height);
-    $("cvg").css("width",sidemenu_size);
+    $("bar svg").css("width",sidemenu_size).css("height",sidemenu_size);
     }
     
     $("#nametitle").slideDown(1500, function(){
