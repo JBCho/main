@@ -16,6 +16,7 @@ $(document).ready(function(){
     
     $("#nametitle").slideDown(1500, function(){
         $("#subtitle").fadeIn(1000);
+        $("bar #sidemenu").animate({"opacity":"1"},1000);
     });
     
     $(window).scroll(function(){
@@ -46,4 +47,11 @@ $(document).ready(function(){
             $("bar #instagram, bar #facebook").fadeOut(500);
         }, 500);
     })
+    if(!isMobile) {
+        var canvas = $('#lines-canvas');
+        canvas.attr('height',$(window).height());
+        canvas.attr('width',$(window).width());
+
+        //new lines().draw();
+    }
 });

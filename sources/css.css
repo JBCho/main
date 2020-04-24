@@ -171,6 +171,7 @@ bar #instagram, bar #facebook {
 }
 
 bar #sidemenu {
+    opacity:0;
     margin-right:3px;
 }
 
@@ -180,6 +181,13 @@ bar #sidemenu {
 
 footer {
     height: 40px;
+}
+
+#lines-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -20;
 }
 
 
@@ -226,4 +234,20 @@ footer {
     #activities .activitybox { 
         display:none;
     }
+    
+    bar {
+        position: absolute;
+        align-items : flex-start;
+        
+    }
+    
+    bar #sidemenu {
+        margin-top: 10px;
+        order:-1;
+    }
+    
+    bar #instagram, bar #facebook {
+    margin-bottom: 0px;
+}
+
 }
