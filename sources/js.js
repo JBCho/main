@@ -34,22 +34,13 @@ $(document).ready(function(){
        })
     });
     
-    
-    
-    $("footer a").hover(function(){
-        $(this).css("color","green");
-    }, function(){
-        $(this).css("background-color","none");
-        
-    })
-    
     $("#sidemenu").hover(function(){
-        $("bar #instagram, bar #facebook").fadeIn(500);
+        $("bar #links").fadeIn(500);
     });
     
     $("bar").mouseleave(function(){
         setTimeout(function(){
-            $("bar #instagram, bar #facebook").fadeOut(500);
+            $("bar #links").fadeOut(500);
         }, 500);
     })
 });
