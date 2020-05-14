@@ -235,6 +235,7 @@ footer span {
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
+        display:none;
     }
     
     #pagetitle {
