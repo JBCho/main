@@ -279,3 +279,10 @@ footer span {
     }
     
 }
+
+/*
+임시 가림 코드
+*/
+#contents, #activities {
+    display:none;
+}
