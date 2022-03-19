@@ -175,11 +175,13 @@ bar #links{
     display:none;
     margin-bottom: 10px;
     margin-top: 10px;
+    position:static;
 }
 
 bar #sidemenu {
     opacity:0;
     margin-right:3px;
+    position:static;
 }
 
 #pos {
@@ -204,6 +206,10 @@ footer span {
     top: 0;
     left: 0;
     z-index: -20;
+}
+
+#idea {
+    padding-bottom: 8px;
 }
 
 
